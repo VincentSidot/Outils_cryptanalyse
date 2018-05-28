@@ -39,6 +39,7 @@ def vignere(str,key,crypt = True):
             else:
                 new_str += Alphabet[(Indice(str[i]) - Indice(key[i%len(key)]))%26]
     return new_str
+
     
 ## Chaine de test
     
@@ -49,7 +50,7 @@ def vignere(str,key,crypt = True):
 ## Stats français
 
 def CalcDict():
-    file = open('C:\\Users\\Vincent\\Documents\\Python\\Cryptanalyse\\texte_français.txt','r')
+    file = open('C:\\Users\\Vincent\\Documents\\Python\\Cryptanalyse\\Outils_cryptanalyse\\texte_français.txt','r')
     
     str = ""
     i = 1
